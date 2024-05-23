@@ -49,15 +49,16 @@ let prevBtn = document.querySelector(".prev-btn")
 let currentItem = 0;
 
 window.addEventListener("DOMContentLoaded", function(){
-	currentReview(currentItem);
+	currentReview(currentItem)
 })
 
-function currentReview(person){
-	const item = reviews[person];
+function currentReview(currentPerson){
+	const item = reviews[currentPerson];
 	img.src = item.image;
 	author.textContent = item.name;
 	job.textContent = item.job;
-	review_text.textContent = item.reviewText
+	review_text.textContent = item.reviewText;
+
 }
 
 nextBtn.addEventListener("click", function(){
@@ -65,7 +66,7 @@ nextBtn.addEventListener("click", function(){
 	if(currentItem > reviews.length - 1){
 		currentItem = 0;
 	}
-	currentReview(currentItem);
+	currentReview(currentItem)
 })
 
 prevBtn.addEventListener("click", function(){
@@ -73,15 +74,10 @@ prevBtn.addEventListener("click", function(){
 	if(currentItem < 0){
 		currentItem = 0;
 	}
-	currentReview(currentItem);
+	currentReview(currentItem)
 })
 
 randomBtn.addEventListener("click", function(){
-	let randNum = Math.floor(Math.random() * reviews.length - 1)
-
-	currentItem = randNum;
-	currentReview(currentItem)
-
+	let randomNum = Math.floor(Math.random() * reviews.length - 1)
+	currentReview(randomNum)
 })
-
-
