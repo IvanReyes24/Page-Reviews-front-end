@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: aliceblue;
+	font-family: "Space Grotesk", sans-serif;
+}
+
+.container{
+	display: block;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: 600px;
+	background-color: white;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+.container .review-title{
+	margin:  20px 0;
+	text-transform: uppercase;
+}
+
+.review-title h1{
+	font-size: 1.8rem;
+}
+.review-title .underline{
+	width: 25%;
+	height: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+	background-color: aliceblue;
+}
+
+.review{
+	margin-top: 30px;
+}
+
+.review img{
+	width: 200px;
+  height: 200px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.review .author{
+	font-size: 20px;
+}
+
+.review .job{
+	font-weight: 500;
+	color:rgb(0, 232, 232);
+}
+
+.review .review-text{
+	margin: 20px 0;
+	height: 80px; 
+	display: block;
+	align-items: center;
+}
+
+.prevNext-btn button{
+	background:none;
+	border: none;
+	font-size: 20px;
+	font-weight: 500;
+	color: rgb(0, 200, 200);
+}
+
+.randomBtnDiv{
+	margin-top: 15px;
+}
+
+.randomBtnDiv .randomBtn{
+	background-color: rgb(53, 247, 247);
+	color: rgb(0, 179, 179);
+	border: 1px solid rgb(0, 179, 179);
+	padding: 5px 10px;
+	border-radius: 14px;
+	font-weight: 700;
+}
+
+.randomBtnDiv .randomBtn:hover{
+	background-color: rgb(43, 220, 220);
+	color: white;
+}
